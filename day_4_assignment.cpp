@@ -31,5 +31,32 @@
       }
     }
     printf("\n");
+        
+    int i = 2 , j = 2;
+    while(i < 12)
+    {
+      num1 = 1;
+      while(j <= i / 2 && num1 == 1)
+      {
+        if (i % j == 0) 
+        {
+          num1 = 0;
+        }
+        j++;
+      }
+      
+      if (num1 == 1) 
+      {
+        printf("%5d ", i);
+        num2++;
+      
+        if (num2 % 10 == 0) 
+        {
+          printf("\n");
+        }
+      }
+      i++;
+    }
+    printf("\n");
     return 0;
   }
